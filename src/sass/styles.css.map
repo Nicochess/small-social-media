@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CACzB",
+    "sources": [
+        "styles.scss",
+        "../components/Sidebar/_sidebar.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
