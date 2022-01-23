@@ -1,0 +1,40 @@
+.tweetBox {
+    padding: 0 20px 20px 0;
+    border-bottom: 8px solid $twitter-background;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input {
+        display: flex;
+        padding: 20px;
+
+        input {
+            flex: 1;
+            margin-left: 20px;
+            font-size: 20px;
+            border: none;
+        }
+    }
+
+    &__button {
+        height: 40px !important;
+        width: 80px;
+        margin: 20px 0 0 auto !important;
+        font-weight: 800 !important;
+        text-transform: inherit !important;
+        color: #fff !important;
+        border-radius: 30px !important;
+        background-color: $twitter-color !important;
+        border: none !important;
+    }
+
+    &__image {
+        input {
+            border: none;
+            padding: 10px;
+        }
+    }
+}

@@ -9,19 +9,24 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import { Button } from "@mui/material";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <TwitterIcon />
-      <SidebarOption text="Home" Icon={<HomeIcon />} />
-      <SidebarOption text="Explore" Icon={<SearchIcon />} />
-      <SidebarOption text="Notifications" Icon={<NotificationsIcon />} />
-      <SidebarOption text="Messages" Icon={<MailOutlineIcon />} />
-      <SidebarOption text="Bookmarks" Icon={<BookmarkBorderIcon />} />
-      <SidebarOption text="Lists" Icon={<ListAltIcon />} />
-      <SidebarOption text="Profile" Icon={<PermIdentityIcon />} />
-      <SidebarOption text="More" Icon={<MoreHorizIcon />} />
+      <TwitterIcon className="twitter-icon" />
+      <SidebarOption text="Home" icon={<HomeIcon />} />
+      <SidebarOption text="Explore" icon={<SearchIcon />} />
+      <SidebarOption text="Notifications" icon={<NotificationsIcon />} />
+      <SidebarOption text="Messages" icon={<MailOutlineIcon />} />
+      <SidebarOption text="Bookmarks" icon={<BookmarkBorderIcon />} />
+      <SidebarOption text="Lists" icon={<ListAltIcon />} />
+      <SidebarOption text="Profile" icon={<PermIdentityIcon />} />
+      <SidebarOption text="More" icon={<MoreHorizIcon />} />
+
+      <Button variant="outlined" fullWidth>
+        Tweet
+      </Button>
     </div>
   );
 };

@@ -1,16 +1,20 @@
-import React from 'react';
-import './sass/styles.css';
-import Sidebar from './components/Sidebar/Sidebar';
+import React from "react";
+import "./sass/styles.css";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Feed from "./components/Feed/Feed";
+import Widgets from "./components/Widgets/Widgets";
 
 function App() {
   return (
-    <div>
-      
+    <div className="app">
       {/* Sidebar */}
       <Sidebar />
-      {/*Feed */}
-      {/* Widgets */}
 
+      {/*Feed */}
+      <Feed />
+
+      {/* Widgets */}
+      <Widgets />
     </div>
   );
 }

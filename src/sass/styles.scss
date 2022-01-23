@@ -1,1 +1,33 @@
-@import '../components/Sidebar/sidebar';
+@import "./variables";
+
+@import "../components/Sidebar/sidebar";
+@import "../components/SidebarOption/sidebarOption";
+
+@import "../components/Feed/feed";
+@import '../components/TweetBox/tweetBox';
+
+@import '../components/Widgets/widgets';
+
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
