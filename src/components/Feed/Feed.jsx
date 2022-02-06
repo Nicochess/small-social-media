@@ -1,5 +1,6 @@
 import React from "react";
 import TweetBox from "../TweetBox/TweetBox";
+import Post from "../Post/Post";
 
 const Feed = () => {
   return (
@@ -11,6 +12,15 @@ const Feed = () => {
       {/* Tweet Box */}
       <TweetBox />
       {/* Posts */}
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </div>
   );
 };
