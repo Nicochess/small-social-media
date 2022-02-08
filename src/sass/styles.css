@@ -1,8 +1,8 @@
 .sidebar {
   border-right: 1px solid #e8f5fe;
-  -webkit-box-flex: 0.25;
-      -ms-flex: 0.25;
-          flex: 0.25;
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
   min-width: 250px;
   padding: 20px 20px 0;
 }
@@ -62,9 +62,9 @@
 }
 
 .feed {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
   border-right: 1px solid #e8f5fe;
   overflow-y: scroll;
 }
@@ -185,9 +185,27 @@
 }
 
 .widgets {
-  -webkit-box-flex: 0.25;
-      -ms-flex: 0.25;
-          flex: 0.25;
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+}
+
+.widgets__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e8f5fe;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px 0 0 20px;
+}
+
+.widgets__input input {
+  border: none;
+  background-color: #e8f5fe;
 }
 
 * {

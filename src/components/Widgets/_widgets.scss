@@ -1,3 +1,17 @@
 .widgets {
-    flex: 0.25;
+    flex: 0.3;
+    
+    &__input {
+        display: flex;
+        align-items: center;
+        background-color: $twitter-background;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px 0 0 20px;
+
+        input {
+            border: none;
+            background-color: $twitter-background;
+        }
+    }
 }
