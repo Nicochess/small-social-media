@@ -2,7 +2,7 @@ import { Avatar } from "@mui/material";
 import Verified from "@mui/icons-material/VerifiedUser";
 import React from "react";
 import {
-  ChatBubbleOutlined,
+  ChatBubbleOutline,
   FavoriteBorder,
   Publish,
   RepeatOne,
@@ -37,7 +37,7 @@ const Post = ({ displayName, username, verified, text, image, avatar }) => {
             alt="Simple GIF"
           />
           <div className="post__footer">
-            <ChatBubbleOutlined fontSize="small" />
+            <ChatBubbleOutline fontSize="small" />
             <RepeatOne fontSize="small" />
             <FavoriteBorder fontSize="small" />
             <Publish fontSize="small" />
