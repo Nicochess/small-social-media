@@ -9,11 +9,11 @@ const TweetBox = () => {
   const sendTweet = (e) => {
     e.preventDefault();
     db.collection("posts").add({
-      displayName: "Lorraine",
-      username: "Lorrainecrst",
+      displayName: "",
+      username: "",
       text: tweetMessage,
       avatar:
-        "https://i.pinimg.com/280x280_RS/97/4f/75/974f75b55a5c4497c5afeaf46d806048.jpg",
+        "",
     });
 
     setTweetMessage("");

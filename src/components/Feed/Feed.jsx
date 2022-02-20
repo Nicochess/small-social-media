@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import FlipMove from "react-flip-move";
 import TweetBox from "../TweetBox/TweetBox";
 import Post from "../Post/Post";
 import db from "../../firebase";
@@ -14,23 +15,24 @@ const Feed = () => {
 
   return (
     <div className="feed">
-      {/* Header */}
       <div className="feed__header">
         <h2>Home</h2>
       </div>
-      {/* Tweet Box */}
-      <TweetBox />
-      {/* Posts */}
 
-      {posts.map((post) => (
-        <Post
-          displayName={post.displayName}
-          username={post.username}
-          avatar={post.avatar}
-          text={post.text}
-          verified={post.verified}
-        />
-      ))}
+      <TweetBox />
+
+      <FlipMove>
+        {posts.map((post) => (
+          <Post
+            id={post.text}
+            displayName={post.displayName}
+            username={post.username}
+            avatar={post.avatar}
+            text={post.text}
+            verified={post.verified}
+          />
+        ))}
+      </FlipMove>
     </div>
   );
 };
