@@ -7,6 +7,7 @@ import {
   Publish,
   RepeatOne,
 } from "@mui/icons-material";
+import ReactIf from "../../utils/ReactIf";
 
 const Post = forwardRef(
   ({ displayName, username, verified, text, image, avatar }, ref) => {
@@ -21,8 +22,10 @@ const Post = forwardRef(
               <h3>
                 {displayName}
                 <span className="post__header--user">
-                  {verified ? <Verified className="post__badge" /> : null} @
-                  {username}
+                  <ReactIf isTrue={verified}>
+                    <Verified className="post__badge" />
+                  </ReactIf>
+                  @{username}
                 </span>
               </h3>
             </div>
